@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:text="https://www.baidu.com"
+            android:id="@+id/etUri" />
+
+        <Button
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+           android:textSize="20sp"
+            android:text="搜索"
+            android:id="@+id/btnSearch" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/bar"
+       android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/webView" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <Button
+            android:text="后退"
+            android:textSize="20sp"
+            android:id="@+id/btnBack"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="前进"
+            android:textSize="20sp"
+            android:id="@+id/btnNext"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="\@Browser"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>
